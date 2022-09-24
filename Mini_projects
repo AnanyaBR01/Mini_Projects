@@ -1,0 +1,28 @@
+#QR code Generator
+import qrcode
+img=qrcode.make("https://www.google.com/search?q=jewls+photo&rlz=1C1CHBF_enIN918IN918&oq=jewls+photo&aqs=chrome..
+69i57j0i13l2j0i10i13i30j0i13i30l2j0i13i15i30j0i10i13i15i30j0i13i15i30l2.13756j0j7&sourceid=chrome&ie=UTF-8")
+img
+
+#OTP generator
+import random
+numbers=list(range(0,10))
+numbers
+
+otp=""
+
+for i in range(0,4):
+    otp+=str((random.choice(numbers)))
+print(otp)
+otp=""
+
+#covid livedata
+from covid import Covid
+instance=Covid()
+data=instance.get_data()
+instance.get_status_by_country_name("India")
+
+#thank you using plyer
+from plyer import battery
+battery.status
+notification.notify(title="Hello everyone",message="today is a holiday",timeout=10)
